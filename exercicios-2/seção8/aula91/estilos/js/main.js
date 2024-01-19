@@ -7,7 +7,7 @@ axios('pessoas.json')
  
 
 function carregaElementosNaPagina(json){
-    const table = document.createElement('table');
+const table = document.createElement('table');
 
   const tituloTr = document.createElement('tr');
   const tituloTd1 = document.createElement('td');
