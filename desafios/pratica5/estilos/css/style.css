@@ -57,7 +57,13 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-.error-text{
-  font-size: 12px;
-  color: crimson;
-}
+.paragrafo-resultado, .bad {
+    background: rgb(109, 255, 182);
+    padding: 10px 20px;
+  }
+  
+#res {
+  font-size: 15px;
+    color: red;
+  }
+  
