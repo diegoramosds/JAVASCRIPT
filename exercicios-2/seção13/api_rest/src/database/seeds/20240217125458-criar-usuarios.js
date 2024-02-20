@@ -1,7 +1,6 @@
-/* eslint-disable no-empty-function */
 const bcryptjs = require('bcryptjs');
 
-/** @type {import('sequelize-cli').Migration} */
+/* @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface) {
     queryInterface.bulkInsert('users', [
@@ -29,5 +28,6 @@ module.exports = {
     ], {});
   },
 
+  // eslint-disable-next-line no-empty-function
   async down() {},
 };
