@@ -6,7 +6,7 @@ import { Title, Paragrafo } from './styled';
 export default function Login() {
   return (
     <Container>
-      <Title isRed={false}>
+      <Title>
         Login
         <small>oii</small>
       </Title>
