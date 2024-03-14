@@ -12,7 +12,7 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
 
-    dispath(exampleActions.clicaBotao());
+    dispath(exampleActions.clicaBotaoRequest());
   }
 
   return (
