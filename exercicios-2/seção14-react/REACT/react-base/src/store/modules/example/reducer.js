@@ -11,7 +11,7 @@ export default function (state = initialState, action) {
       console.log('Sucesso');
       const newState = { ...state };
       newState.botaoClicado = !newState.botaoClicado;
-      return state;
+      return newState;
     }
 
     case types.BOTAO_CLICADO_FAILURE: {
