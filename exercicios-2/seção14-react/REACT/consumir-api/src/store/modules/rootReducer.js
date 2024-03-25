@@ -1,7 +1,7 @@
-import { all } from 'redux-saga/effects';
+import { combineReducers } from 'redux';
 
-import auth from './auth/sagas';
+import auth from './auth/reducer';
 
-export default function* rootSaga() {
-  return yield all([auth]);
-}
+export default combineReducers({
+  auth,
+});

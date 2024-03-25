@@ -6,8 +6,6 @@ const initialState = {
   user: {},
   isLoading: false,
 };
-
-// eslint-disable-next-line func-names, default-param-last
 export default function (state = initialState, action) {
   switch (action.type) {
     case types.LOGIN_REQUEST: {

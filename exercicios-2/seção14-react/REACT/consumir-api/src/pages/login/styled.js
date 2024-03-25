@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as colors from '../../config/colors';
 
-export const Form = styled.p`
+export const Form = styled.form`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
