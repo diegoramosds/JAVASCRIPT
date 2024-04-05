@@ -61,7 +61,9 @@ export default function Alunos() {
       <Loading isLoading={isLoading} />
       <h1>Alunos</h1>
 
-      <NovoAluno to="/aluno/">Novo aluno</NovoAluno>
+      <NovoAluno color="#1A1A1D" to="/aluno/">
+        Novo aluno
+      </NovoAluno>
 
       <AlunoContainer>
         {alunos.map((aluno, index) => (
@@ -79,7 +81,7 @@ export default function Alunos() {
               <FaEdit size={16} color="#1A1A1D" />
             </Link>
             <Link onClick={handleDeleteAsk} to={`/aluno/${aluno.id}/delete`}>
-              <FaWindowClose size={16} color="#C3073F" />
+              <FaWindowClose size={16} color="#8f291c" />
             </Link>
             <FaExclamation
               size={16}
