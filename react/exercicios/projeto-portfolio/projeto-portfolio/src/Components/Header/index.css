@@ -1,0 +1,15 @@
+.header-container {
+    text-align: center;
+    background-color: #e2e2e2; /* Cor de fundo do cabeçalho *
+    position: relative; /* Adicione position: relative; para z-index funcionar */
+    z-index: 1; /* Define a posição do cabeçalho acima dos outros elementos */
+    height: 50px;
+    border-radius: 5px;
+}
+
+.custom-link{
+position: relative;
+top: 38%;
+text-decoration: none;
+margin: 30px;
+}

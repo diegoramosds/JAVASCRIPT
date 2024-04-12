@@ -10,6 +10,7 @@
   position: relative;
   bottom: 90%;
   padding: 40px;
+  transition: width 0.3s ease, height 0.3s ease;
   
 }
 .icons-container svg:hover {
@@ -18,5 +19,5 @@
     border:1px solid #ddedf6;
     border-radius: 10px;
     transform: translateY(-10px);
-
+    box-shadow: 0 0 8px 3px #00609e;
   }
