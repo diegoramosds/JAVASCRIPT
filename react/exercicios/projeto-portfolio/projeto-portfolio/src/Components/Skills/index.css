@@ -1,0 +1,22 @@
+.sk-container {
+    color: azure;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icons-container svg {
+  width: 100px;
+  height: 90px;
+  position: relative;
+  bottom: 90%;
+  padding: 40px;
+  
+}
+.icons-container svg:hover {
+    width: 120px;
+    height: 90px;
+    border:1px solid #ddedf6;
+    border-radius: 10px;
+    transform: translateY(-10px);
+
+  }
