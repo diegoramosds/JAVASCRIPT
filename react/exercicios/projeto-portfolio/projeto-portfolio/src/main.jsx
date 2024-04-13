@@ -5,8 +5,7 @@ import './styles/global.css'
 import Skills from './Components/Skills'
 import Header  from './Components/Header'
 
-import { BrowserRouter } from 'react-router-dom'
-
+import { BrowserRouter} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
