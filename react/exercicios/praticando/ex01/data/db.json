@@ -14,6 +14,11 @@
         "id": "3",
         "name": "Tenis",
         "price": 179.9
+      },
+      {
+        "id": "5",
+        "name": "roupa",
+        "price": 179.9
       }
     ]
   }
