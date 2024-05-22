@@ -4,66 +4,6 @@
       "id": "1",
       "name": "Camisa",
       "price": 59.9
-    },
-    {
-      "id": "2",
-      "name": "Calça vermelha",
-      "price": 90
-    },
-    {
-      "id": "3",
-      "name": "Boné aba reta",
-      "price": 29.9
-    },
-    {
-      "id": "08cb",
-      "name": "tt",
-      "price": "12"
-    },
-    {
-      "id": "ffc9",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "a457",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "fce2",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "5ff9",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "461c",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "3cda",
-      "name": "otavio",
-      "price": "125"
-    },
-    {
-      "id": "bd3a",
-      "name": "teclado ",
-      "price": "110"
-    },
-    {
-      "id": "eac0",
-      "name": "cadeira",
-      "price": "200"
-    },
-    {
-      "id": "3a70",
-      "name": "mouse",
-      "price": "50"
     }
   ]
 }
