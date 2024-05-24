@@ -21,10 +21,6 @@ function App() {
     localStorage.setItem("products", JSON.stringify(updatedProducts))
   }
 
-  useEffect(() => {
-    
-  },[])
-
 
 const handleSubmit = (e) => {
   e.preventDefault();
