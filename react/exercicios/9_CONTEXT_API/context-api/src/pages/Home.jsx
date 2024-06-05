@@ -9,17 +9,32 @@ import ChangeCounter from "../components/ChangeCounter"
 //5- context complexo
 import { useTitleColorContext } from "../hooks/useTitleColorContext";
 
+
+
+
 const Home = () => {
   const {counter} = useCounterContext();
 
   //5- context complexo
-  const {color} = useTitleColorContext();
+  const {color, dispatch} = useTitleColorContext();
+
+  //6 - alterando context mais complexo
+  const setTitleColor = (color) => {
+    dispatch({ type: color})
+  }
+  
 
   return (
     <div>
       <h1 style={{color: color}}>Home</h1>
       <p>O valor do context é:{counter}</p>
       <ChangeCounter/>
+      <div >
+         <button onClick={() => setTitleColor("RED")}>Cor Vermelha</button>
+         </div>
+      <div >
+        <button onClick={() => setTitleColor("BLUE")}>Cor azul</button>
+        </div>
     </div>
   )
 }
