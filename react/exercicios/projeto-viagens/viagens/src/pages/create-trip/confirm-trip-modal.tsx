@@ -1,20 +1,26 @@
 import { User, X } from "lucide-react";
 import { FormEvent } from "react";
 import { Button } from "../../components/button";
+import { ClipLoader } from "react-spinners";
 
 interface ConfirmTripModalProps {
   closeConfirmTripModal: () => void
   setOwnerName: (name: string) => void;
   setOwnerEmail: (email: string) => void;
   createTrip: (event: FormEvent<HTMLFormElement>) => void
+  loading: boolean;
 }
 
 export function ConfirmTripModal({
   closeConfirmTripModal,
   createTrip,
   setOwnerEmail,
-  setOwnerName
+  setOwnerName,
+  loading,
 }: ConfirmTripModalProps) {
+
+// const [loading, setLoading] = useState(false);
+  
   return (
     <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
       <div className="w-[640px] rounded-xl py-5 px-6 shadow-shape bg-zinc-900 space-y-5">
@@ -40,6 +46,7 @@ export function ConfirmTripModal({
               placeholder="Seu nome completo"
               className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
               onChange={event => setOwnerName(event.target.value)}
+              disabled={loading}
             />
           </div>
 
@@ -51,11 +58,13 @@ export function ConfirmTripModal({
               placeholder="Seu e-mail pessoal"
               className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
               onChange={event => setOwnerEmail(event.target.value)}
+              disabled={loading}
             />
           </div>
 
-          <Button type="submit" size="full">
-            Confirmar criação da viagem
+             
+          <Button type="submit" size="full"  disabled={loading}>
+            {loading ? <ClipLoader className="text-zinc-400 size-4" /> : <p>Confirmar criação da viagem</p>}
           </Button>
         </form>
       </div>

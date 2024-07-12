@@ -17,7 +17,7 @@ const [destination, setDestination] = useState('')
 const [ownerName, setOwnerName] = useState('')
 const [ownerEmail, setOwnerEmail] = useState('')
 const [eventStartAndEndDates, setEventStartAndEndDates] = useState<DateRange | undefined>()
-
+const [loading, setLoading] = useState(false);
 
 
 const [emailsToInvite, setEmailsToInvite] = useState([
@@ -52,9 +52,13 @@ function closeConfirmTripModal() {
 function addNewEmailToInvite(event : FormEvent<HTMLFormElement>) {
   event.preventDefault()
 
+
+
   const data = new FormData(event.currentTarget)
 
   const email = data.get('email')?.toString();
+
+
 
   if (!email) {
     return;
@@ -78,6 +82,8 @@ setEmailsToInvite(newEmailList);
 
 async function createTrip(event : FormEvent<HTMLFormElement>) {
 event.preventDefault()
+
+setLoading(true); 
 
 console.log(destination)
 console.log(eventStartAndEndDates)
@@ -110,7 +116,7 @@ const response = await api.post('/trips', {
 })
 
 const { tripId } = response.data
-
+setLoading(false);
 navigate(`/trips/${tripId}`)
 }
 
@@ -159,7 +165,8 @@ navigate(`/trips/${tripId}`)
           closeConfirmTripModal={closeConfirmTripModal}
           createTrip={createTrip}
           setOwnerName={setOwnerName}
-          setOwnerEmail={setOwnerEmail}/>
+          setOwnerEmail={setOwnerEmail}
+          loading={loading}/>
        )}
 
     </div>
