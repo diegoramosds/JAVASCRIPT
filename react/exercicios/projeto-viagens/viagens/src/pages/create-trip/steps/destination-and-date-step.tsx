@@ -42,18 +42,18 @@ export function DestinationAndDateStep({
 
 
     return (
-        <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center shadow-shape gap-3">
-        <div className="flex items-center gap-2 flex-1">
-          <MapPin className="size-5 text-zinc-400"  />
+        <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center shadow-shape gap-3 ">
+        <div className="flex items-center gap-1 flex-1 md:gap-2">
+          <MapPin className="text-zinc-400 size-3  md:size-5"  />
             <input disabled={isGuestsInputOpen} 
             type="text" 
             placeholder="Para onde você vai?"
-            className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
+            className="bg-transparent placeholder-zinc-400 outline-none flex-1 text-xs  md:text-lg"
             onChange={event => setDestination(event.target.value)} />
         </div>
-        <button onClick={openDatePicker}   disabled={isGuestsInputOpen}  className="flex items-center gap-2 text-left w-[240px]">
-          <Calendar className="size-5 text-zinc-400" />
-            <span className="text-lg text-zinc-400  w-40 flex-1">{diplayedDate || 'Quando?'} </span>
+        <button onClick={openDatePicker}   disabled={isGuestsInputOpen}  className="flex items-center gap-1 text-left w-[60px]  md:w-[240px] md:gap-2">
+          <Calendar className=" text-zinc-400  size-3  md:size-5" />
+            <span className="text-zinc-400  w-40 flex-1 text-xs  md:text-lg">{diplayedDate || 'Quando?'} </span>
         </button>
         {isDatePickerOpen && (
           <div className="fixed inset-0 bg-black/60 flex items-center justify-center">
@@ -75,12 +75,12 @@ export function DestinationAndDateStep({
         {isGuestsInputOpen ? (
         
           <Button onClick={closeGuestsInput} variant="secondary" >
-          Alterar local/data <Settings2 className="size-5" />
+          Alterar local/data <Settings2 className="size-3 md:size-5"  />
         </Button>
         ) : (
          
             <Button onClick={openGuestsInput} variant="primary">
-              Continuar <ArrowRight className="size-5" />
+              Continuar <ArrowRight className="size-3 md:size-5" />
             </Button>
         )}
       </div>

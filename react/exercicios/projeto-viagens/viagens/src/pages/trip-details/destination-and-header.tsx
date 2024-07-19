@@ -88,15 +88,15 @@ export function DestinationAndDateHeader() {
       }
       
   return (
-    <div className="px-4 h-16 rounded-xl bg-zinc-900 shadow-shape flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <MapPin className="size-5 text-zinc-400" />
+    <div className="px-3 md:px-4 h-16 rounded-xl bg-zinc-900 shadow-shape flex items-center justify-between text-[.7em] md:text-base">
+        <div className="flex items-center gap-1">
+          <MapPin className="size-3 md:size-5 text-zinc-400" />
           <span className="text-zinc-100">{trip?.destination}</span>
         </div>
 
-        <div className="flex items-center gap-5">
-          <div className="flex items-center gap-2">
-            <Calendar className="size-5 text-zinc-400" />
+        <div className="flex items-center gap-1 md:gap-5">
+          <div className="flex items-center gap-1">
+            <Calendar className="size-3 md:size-5 text-zinc-400" />
             <span className="text-zinc-100">{displayedDate}</span>
           </div>
 

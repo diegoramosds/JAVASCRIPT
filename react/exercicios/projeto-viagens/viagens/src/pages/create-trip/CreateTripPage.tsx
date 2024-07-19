@@ -7,6 +7,7 @@ import { InviteGuestsStep } from './steps/invite-guests-step';
 import { DateRange } from 'react-day-picker';
 import { api } from '../../lib/axios';
 
+
 export function CreateTripPage() {
 
 const [isGuestsInputOpen, setIsGuestsInputOpen] = useState(false)
@@ -85,11 +86,6 @@ event.preventDefault()
 
 setLoading(true); 
 
-console.log(destination)
-console.log(eventStartAndEndDates)
-console.log(emailsToInvite)
-console.log(ownerName)
-console.log(ownerEmail)
 
 if (!destination) {
   return
@@ -160,6 +156,8 @@ navigate(`/trips/${tripId}`)
          emailsToInvite={emailsToInvite}
          removeEmailFromInvites={removeEmailFromInvites}/>
         )}
+
+        
        {isConfirmTripModalOpen && (
          <ConfirmTripModal
           closeConfirmTripModal={closeConfirmTripModal}

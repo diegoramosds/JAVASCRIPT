@@ -2,7 +2,7 @@ import { ComponentProps, ReactNode } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const buttonVariants = tv({
-  base: 'rounded-lg px-5 font-medium flex items-center justify-center gap-2',
+  base: 'rounded-lg px-0 font-medium flex items-center justify-center gap-0 md:gap-2 md:px-5',
   
   variants: {
     variant: {
@@ -11,8 +11,8 @@ const buttonVariants = tv({
     },
     
     size: {
-      default: 'py-2',
-      full: 'w-full h-11'
+      default: 'py-1 w-20 text-xs md:w-36 md:text-base',
+      full: 'w-full text-xs h-11  md:text-base' 
     }
   },
 
