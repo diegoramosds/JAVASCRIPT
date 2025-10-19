@@ -17,10 +17,7 @@ function cliqueBotoes(){
     const el = e.target;
 
     if(el.classList.contains('gerar')) {
-      geradordeCores();
-   
-      
-      
+      geradordeCores(); 
     }
 
 
@@ -28,6 +25,3 @@ function cliqueBotoes(){
 
 }
 cliqueBotoes();
-
-
-
