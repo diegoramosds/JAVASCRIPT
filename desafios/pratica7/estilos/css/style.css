@@ -1,0 +1,11 @@
+#tasksArray {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+#include-goals-display {
+    color: red;
+    font-weight: bolder;
+}
