@@ -4,7 +4,7 @@ const display = document.getElementById("tasksArray");
 
 const storageTask = localStorage.getItem("tasks");
 
-let tasksArray = [];
+let tasksArray = [storageTask];
 
 console.log(storageTask);
 button.addEventListener("click", function () {
@@ -18,10 +18,9 @@ button.addEventListener("click", function () {
       const newTask = document.createElement("li");
       newTask.textContent = task;
       display.appendChild(newTask);
-      tasksArray = [...tasksArray, newTask];
     });
     input.value = "";
-    localStorage.setItem("tasks", JSON.stringify(tasksArray));
+    localStorage.setItem("tasks", JSON.stringify());
   } else {
     display.innerText = "Digite a tarefa que deseja adicionar";
   }
