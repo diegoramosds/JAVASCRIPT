@@ -25,8 +25,3 @@ button.addEventListener("click", function () {
     display.innerText = "Digite a tarefa que deseja adicionar";
   }
 });
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> 129f91fb8ebb8d4a8d389e663034fc7ec4da9b9a
