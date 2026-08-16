@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.divPai{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dedede;
+    gap: 32px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+.slider img {
+    width: 400px;
+    opacity: 0;
+    transition: all .3s;
+}
+.slider img.active {
+    opacity: 1;
+}
+.slider img:not(:first-child) {
+    position: absolute;
+
+}
+
+button {
+    margin: 2px;
+    padding: 10px 20px;
+}
+
+.opacityButton {
+    opacity: 0;
+}
