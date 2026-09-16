@@ -9,8 +9,10 @@
 //   console.log(acumulation);
 // }
 // Numbers('-', 1, 2)
-
-function Numbers(type, ...value) {
+ 
+function Numbers(type, value, value
+  
+) {
   let acumulation = 0;
   if (type === "+") {
     acumulation += value;
