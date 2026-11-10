@@ -14,8 +14,9 @@ count.onclick = function () {
   console.log(heightPeson);
   console.log(weightPerson);
 
-  const imcCalc = weightPerson / (heightPeson ** 2);
+  const imcCalc = weightPerson / (heightPeson * heightPeson);
   const imcT = imcCalc.toFixed(2)
+  console.log(imcT);
 
 
   imc.innerHTML = `Olá ${namePerson} seu IMC é ${imcT}`;
